@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>cv</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container main-container">
+      <section class="section section-profile" id="profile">
+        <img src="./assets/img/avatar.jpg" alt="" class="section-profile-avatar">
+        <div class="section-profile-title">
+          <h1 class="section-title main-title">Ilya Bondarev</h1>
+          <h3 class="section-subtitle">Junior Front-End Developer</h3>
+        </div>
+      </section>
+      <section class="section" id="contacts">
+        <h2 class="section-title">Contacts</h2>
+        <ul class="section-list">
+          <li class="section-item contacts-item">Moscow, Russia</li>
+          <li class="section-item contacts-item">Email: <a href="mailto:ilushkabond@gmail.com">ilushkabond@gmail.com</a>
+          </li>
+          <li class="section-item contacts-item">GitHub: <a href="https://github.com/ilushkabond">ilushkabond</a></li>
+          <li class="section-item contacts-item">Discord: <b>ILUSHKABOND#1580</b></li>
+          <li class="section-item contacts-item">Codewars: <a
+              href="https://www.codewars.com/users/ilushkabond">ilushkabond</a></li>
+        </ul>
+      </section>
+      <section class="section" id="summary">
+        <h2 class="section-title">Summary</h2>
+        <p>
+          For the last year I was working as Power BI and Angular Developer. My desire to work as a designer
+          started when I really enjoyed writing code and seeing the changes I made. I've been learning HTML /
+          CSS / JavaScript / PHP / Python / Angular on my own. I'm trying to become a Angular Developer now.
+          Also I want to learn NestJs as second framework.
+        </p>
+      </section>
+      <section class="section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <ul class="section-list">
+          <li class="section-item">HTML / CSS</li>
+          <li class="section-item">JavaScript / TypeScript</li>
+          <li class="section-item">Frameworks: Angular, NestJS (in progress)</li>
+          <li class="section-item">Git/ GitHub</li>
+          <li class="section-item">Design program: Figma / Adobe XD</li>
+          <li class="section-item">Web development tools: VSCode, Notepad++</li>
+        </ul>
+      </section>
+      <section class="section" id="code">
+        <h2 class="section-title">Code</h2>
+        <pre>
+          <code>
+const nextBigger = (n) => {
+  let d = n.toString().split('');
+  
+    let p = -1;
+    for (let i = d.length - 1; i > 0; i--) {
+      if (+d[i] > +d[i - 1]) {
+      p = i - 1;
+      break;
+      }
+    }
+    
+    if (p == -1) return p;
+    
+    let right = d.splice(p);
+    let pv = right.splice(0, 1)[0];
+    let mm = null,
+      mmi = null;
+    
+    for (let i = 0; i &lt; right.length; i++) {
+      if (right[i] > pv) {
+      if (mm == null || right[i] &lt; mm) {
+        mm = right[i];
+        mmi = i;
+      }
+      }
+    }
+    
+    if (mmi == null) return -1;
+    
+    right.splice(mmi, 1);
+    right.push(pv);
+    right = right.sort();
+    
+    const ret = +d.concat([mm]).concat(right).join('');
+    
+    if (ret &lt; n) return -1;
+    
+    return ret;
+  };					  
+          </code>
+        </pre>
+      </section>
+      <section class="section" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <ul class="section-list">
+          <li class="section-list">Building Power BI reports using DWH data</li>
+          <li class="section-list">Angular / NestJS / JWT projects</li>
+        </ul>
+      </section>
+      <section class="section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <ul class="section-list">
+          <li class="section-item">
+            <a href="https://ilushkabond.github.io/rsschool-cv/">CV</a>
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
+        <p>National Research University "Moscow Power Engineering Institute" (MPEI)</p>
+      </section>
+      <section class="section" id="english">
+        <h2 class="section-title">English</h2>
+        <p>B2 - Intermediate</p>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>&copy; 2022 <a href="https://github.com/ilushkabond" class="github nav-link" target="_blank">ilushkabond</a></div>
+      <a href="https://rs.school/js/" class="rss" target="_blank"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
