@@ -90,7 +90,7 @@ const nextBigger = n => {
 ## Languages
 
 - **Russian** - native speaker
-- **English** - B2 (Upper Intermediate)
+- **English** - B2 (Intermediate)
 
 ## Projects
 
