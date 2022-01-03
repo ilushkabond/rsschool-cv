@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0, 0, 238);
+}
+
+.section-wrapper {
+	display: flex;
+	margin: 1rem auto;
+	max-width: 960px;
+	justify-content: center;
+	align-items: center;
+	line-height: 1.5;
+}
+
+.my-photo {
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+}
+
+.section-header__contacts {
+	margin: 1rem 2rem 0;
+}
+
+.section-header__contacts-list {
+	list-style: none;
+}
+
+.section-main__skills-list {
+	margin-left: 2rem;
+}
